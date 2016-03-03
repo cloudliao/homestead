@@ -12,10 +12,26 @@ keys:
 folders:
     - map: ~/Code
       to: /home/vagrant/Code
+    
+    - map: ~/site_code
+      to: /home/vagrant/site_code
 
 sites:
-    - map: homestead.app
-      to: /home/vagrant/Code/Laravel/public
+    - map: codeigniter.app
+      to: /home/vagrant/Code/CodeIgniter/
+      
+    - map: www.asus.dev
+      to: /home/vagrant/site_code/view/www
+    
+    - map: www-api.asus.dev
+      to: /home/vagrant/site_code/api/www-api
+      
+    - map: vendor.asus.dev
+      to: /home/vagrant/site_code/view/vendor
+      
+    - map: vendor-api.asus.dev
+      to: /home/vagrant/site_code/api/vendor-api
+    
 
 databases:
     - homestead
